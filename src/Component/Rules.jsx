@@ -20,7 +20,7 @@ const RulesContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   background-color: #fbf1f1;
-  padding: 20px;
+  padding: 10px;
   margin-top: 40px;
   border-radius: 10px;
   h2 {
@@ -28,5 +28,13 @@ const RulesContainer = styled.div`
   }
   .text {
     margin-top: 24px;
+  }
+  @media screen and(max-width:600px) {
+    h2 {
+      font-size: 20px;
+    }
+    .text {
+      margin-top: 20px;
+    }
   }
 `;

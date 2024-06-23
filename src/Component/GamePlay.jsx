@@ -65,14 +65,13 @@ const StartGame = () => {
 export default StartGame;
 
 const MainContainer = styled.main`
-  padding-top: 70px;
   .top_section {
     display: flex;
     justify-content: space-around;
     align-items: end;
   }
   .btns {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;

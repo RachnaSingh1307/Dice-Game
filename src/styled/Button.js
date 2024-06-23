@@ -5,7 +5,7 @@ export const Button = styled.button`
   padding: 10px, 18px;
   background: black;
   border-radius: 5px;
-  min-width: 220px;
+  man-width: 220px;
   font-size: 16px;
   height: 44px;
   transistion: 0.5ss background ease-in;
@@ -18,6 +18,10 @@ export const Button = styled.button`
     color: black;
     font-weight: 700;
     transistion: 0.3s background ease-in;
+  }
+  @media screen and (max-width: 600px) {
+    height: 20px;
+    display: block;
   }
 `;
 

@@ -15,10 +15,15 @@ const ScoredContainer = styled.div`
   text-align: center;
   h1 {
     font-size: 100px;
-    line-height: 100px;
   }
   p {
     font-size: 24px;
     font-weight: 500px;
+  }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 20px;
+      font-weight: 800px;
+    }
   }
 `;

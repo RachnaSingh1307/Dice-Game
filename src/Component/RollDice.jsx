@@ -16,12 +16,22 @@ const DiceContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 40px;
   .dice {
     cursor: pointer;
   }
 
   p {
     font-size: 24px;
+  }
+  @media screen and (max-width: 600px) {
+    img {
+      margin-top: 50px;
+      height: 200px;
+      width: 200px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../styled/Button";
 
-const StartGame = ({ toggle }) => {
+const StartGame = ({ toggleGamePlay }) => {
   return (
     <Container>
       <div>
@@ -9,7 +9,7 @@ const StartGame = ({ toggle }) => {
       </div>
       <div className="content">
         <h1>DICE GAME</h1>
-        <Button onClick={toggle}>Play Now</Button>
+        <Button onClick={toggleGamePlay}>Play Now</Button>
       </div>
     </Container>
   );
@@ -21,5 +21,16 @@ const Container = styled.div`
   display: flex;
   margin: 0 auto;
   height: 100vh;
+  justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+    img {
+      height: 220px;
+      width: 220px;
+    }
+  }
 `;

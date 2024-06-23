@@ -34,6 +34,7 @@ export default NumberSelector;
 
 const NumberSelectorContainer = styled.div`
   display: flex;
+  padding-top: 20px;
   flex-direction: column;
   align-items: end;
 
@@ -42,11 +43,25 @@ const NumberSelectorContainer = styled.div`
     gap: 24px;
   }
   p {
+    margin: 10px;
     font-size: 24px;
     font-weight: 700px;
   }
   .error {
     color: red;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 600px) {
+    .flex {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 70px);
+      gap: 10px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 `;
 
